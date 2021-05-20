@@ -1,0 +1,137 @@
+/* Write some CSS below */
+h1, h2, h3, h5 {
+	color: #126e82;
+}
+
+body {
+	font-family: Overpass;
+	margin: 0;
+}
+
+p {
+	color: #132c33;
+	font-size: 15px;
+	font-family: Chivo;
+	font-weight: lighter;
+	text-align: center;
+	opacity : .8;
+}
+
+
+.container {
+	width: 800px;
+	margin: auto;
+}
+
+.banner {
+	background-image: url('images/rio.jpg');
+	opacity: 2.2;
+	background-size: cover;
+	background-position: center;
+	padding: 100px 0;
+	text-align: center;
+}
+
+.banner h1 {
+	color: white;
+	text-align: center;
+	font-size: 50px;
+}
+
+.banner p {
+	color: white;
+	font-size: 30px;	
+}
+
+.btn-red {
+	color: #d35151;
+	background-color: #fcf4f4;
+	font-size: 18px;
+	font-family: 'Pattaya', sans-serif;
+	font-weight: lighter;
+	padding: 16px 38px;
+	border-radius: 4px;
+	display: inline-block;
+	transition: .5s;
+
+}
+
+.btn-red:hover {
+	background-color: #d44000;
+	color: #ffefcf;
+}
+
+.card-white {
+	background: white;
+	box-shadow: 0 0 16px rgba(0,0,0,0.2);
+	border-radius: 4px;
+	width: 220px;
+	margin: 10px;
+	padding: 24px;
+	text-align: center;
+
+
+}
+
+.card-white img {
+	height: 180px;
+	width: 180px;
+	object-fit: cover;
+	border-radius: 4px;
+}
+
+.card-white h3 {
+	margin-bottom: 0;
+}
+
+.footer {
+	background: #ffefcf;
+	opacity: .9;
+	text-align: center;
+	padding: 14px 0;
+	margin-top: 50px
+}
+
+.footer p {
+	color: #d44000;
+}
+
+.footer h5 {
+	color: #864000;
+}
+
+.cards {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 12px;
+}
+
+/* ---- RESPONSIVE DESING: amostragem de grids diferentes, de acordo com o tamanho da tela ------*/
+@media (max-width: 800px) {
+	.cards {
+		grid-template-columns: 1fr;
+	}
+	.cards-white {
+		width: auto;
+	}
+}
+
+/*amostragem do container de forma diferente, de acordo com o tamanho da tela ------*/
+@media (min-width: 500px) {
+	.container {
+		width: 400px;
+	}
+}
+
+
+@media (min-width: 800px) {
+	.container {
+		width: 600px;
+	}
+}
+
+@media (min-width: 1000px) {
+	.container {
+		width: 800px;
+	}
+}
